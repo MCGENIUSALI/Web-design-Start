@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { ParallaxHero } from "@/components/parallax-hero"
 import ServicesSection from "@/components/services-section"
+import  Products  from "@/components/products";
 import { StatsSection } from "@/components/stats-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -11,6 +12,7 @@ export default function Home() {
       <Navigation />
       <ParallaxHero />
       <ServicesSection />
+      <Products />
       <StatsSection />
       <CTASection />
       <Footer />

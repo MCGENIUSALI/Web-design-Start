@@ -36,7 +36,7 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section className="py-52 px-6 bg-[#EFF5FC]">
+    <section className="py-40 px-6 bg-[#EFF5FC]">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-3 gap-12 items-start">
           {/* Left Column */}
