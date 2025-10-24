@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
+import Mylogo from "@/public/icons/logo start.svg"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -27,10 +29,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 bg-foreground rounded-full"></div>
-            </div>
-            <span className="text-2xl font-bold text-foreground">StartDRC</span>
+            <Image src={Mylogo} alt="Mon logo" width={100} height={100} className="w-36 max-w-40" />
           </div>
 
           {/* Desktop Navigation */}

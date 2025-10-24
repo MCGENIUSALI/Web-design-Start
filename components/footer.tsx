@@ -1,3 +1,10 @@
+"use client";
+
+import Image from "next/image";
+import Mylogo from "@/public/icons/logo start.svg"
+
+
+
 export function Footer() {
   return (
     <footer className="bg-muted/20 border-t border-border py-12">
@@ -6,12 +13,20 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 bg-foreground rounded-full"></div>
+              <div className="flex items-center space-x-2">
+                <Image
+                  src={Mylogo}
+                  alt="Mon logo"
+                  width={100}
+                  height={100}
+                  className="w-36 max-w-40"
+                />
               </div>
-              <span className="text-xl font-bold text-foreground">StartDRC</span>
             </div>
-            <p className="text-muted-foreground">Votre partenaire de confiance pour la transformation numérique.</p>
+
+            <p className="text-muted-foreground">
+              Votre partenaire de confiance pour la transformation numérique.
+            </p>
           </div>
 
           {/* Services */}
@@ -43,7 +58,9 @@ export function Footer() {
 
           {/* Company */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Entreprise</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              Entreprise
+            </h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
@@ -84,5 +101,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

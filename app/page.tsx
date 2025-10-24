@@ -1,10 +1,12 @@
-import { Navigation } from "@/components/navigation"
-import { ParallaxHero } from "@/components/parallax-hero"
-import ServicesSection from "@/components/services-section"
-import  Products  from "@/components/products";
-import { StatsSection } from "@/components/stats-section"
-import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
+import { Navigation } from "@/components/navigation";
+import { ParallaxHero } from "@/components/parallax-hero";
+import ServicesSection from "@/components/services-section";
+import Products from "@/components/products";
+import { StatsSection } from "@/components/stats-section";
+import { CTASection } from "@/components/cta-section";
+import { Footer } from "@/components/footer";
+import TeamSection from "@/components/team-section";
+import FaqStatsSection from "@/components/faq-stats-section";
 
 export default function Home() {
   return (
@@ -13,9 +15,11 @@ export default function Home() {
       <ParallaxHero />
       <ServicesSection />
       <Products />
-      <StatsSection />
+      {/* <StatsSection /> */}
+      <TeamSection />
+      <FaqStatsSection/>
       <CTASection />
       <Footer />
     </main>
-  )
+  );
 }
