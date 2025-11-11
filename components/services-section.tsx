@@ -1,8 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Smartphone, Palette, Megaphone } from "lucide-react"; // Icônes Lucide adaptées
 
 export default function ServicesSection() {
+
+  const whatsappLink = `https://wa.me/243850674579?text=${encodeURIComponent(
+    "Bonjour, je souhaite en savoir plus sur votre équipe et vos services."
+  )}`;
+
+
   const services = [
     {
       title: "Solutions IA & Automatisation",
@@ -32,7 +40,10 @@ export default function ServicesSection() {
       icon: Megaphone,
       isDark: false,
     },
+    
   ];
+
+  
 
   return (
     <section className="py-40 px-6 bg-[#EFF5FC]" id="services">
@@ -48,7 +59,7 @@ export default function ServicesSection() {
               conçues pour s'adapter parfaitement aux besoins uniques de votre
               entreprise.
             </p>
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium" onClick={() => window.open(whatsappLink, "_blank")}>
               Parlons-en
             </Button>
           </div>
