@@ -124,7 +124,7 @@ export default function FaqStatsSection() {
   const isStatsInView = useInView(statsRef, { once: true, margin: "-100px" })
 
   return (
-    <section className="bg-white py-20 px-6 lg:px-12">
+    <section className="bg-white py-20 px-6 lg:px-12" id="about">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* FAQ Column */}

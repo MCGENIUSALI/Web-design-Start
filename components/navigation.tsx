@@ -34,17 +34,20 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#" className="text-foreground hover:text-primary transition-colors font-medium">
               Accueil
             </a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">
               Services
             </a>
+            <a href="#projets" className="text-foreground hover:text-primary transition-colors font-medium">
+              Projets
+            </a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
               À propos
             </a>
-            <a href="#pages" className="text-foreground hover:text-primary transition-colors font-medium">
-              Pages
+            <a href="#contacts" className="text-foreground hover:text-primary transition-colors font-medium">
+              Contacts
             </a>
           </div>
 

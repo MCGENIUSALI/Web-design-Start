@@ -68,11 +68,15 @@ export default function TeamSection() {
   };
 
   const portraits = [
-    { id: 1, src: "/images/portrait teams/1.png" },
-    { id: 2, src: "/images/portrait teams/2.png" },
-    { id: 3, src: "/images/portrait teams/3.png" },
-    { id: 4, src: "/images/portrait teams/4.png" },
+    { id: 1, src: "/images/portrait teams/barro.png" },
+    { id: 2, src: "/images/portrait teams/kris.png" },
+    { id: 3, src: "/images/portrait teams/johnny.png" },
+    { id: 4, src: "/images/portrait teams/riche.png" },
   ];
+
+  const whatsappLink = `https://wa.me/243850674579?text=${encodeURIComponent(
+    "Bonjour, je souhaite en savoir plus sur votre équipe et vos services."
+  )}`;
 
   return (
     <section
@@ -167,6 +171,7 @@ export default function TeamSection() {
             <Button
               size="lg"
               variant="outline"
+              onClick={() => window.open(whatsappLink, "_blank")}
               className="rounded-md border-2 hover:bg-foreground hover:text-background transition-all duration-300 text-base md:text-lg px-6 py-6 bg-transparent text-gray-900"
             >
               Contactez notre equipe{" "}

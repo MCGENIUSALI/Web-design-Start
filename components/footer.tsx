@@ -90,8 +90,8 @@ export function Footer() {
             <h3 className="text-lg font-semibold text-foreground">Contact</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>contact@startdrc.com</li>
-              <li>+33 1 23 45 67 89</li>
-              <li>Paris, France</li>
+              <li>+243 850 674 579</li>
+              <li>Kinshasa, RDC</li>
             </ul>
           </div>
         </div>

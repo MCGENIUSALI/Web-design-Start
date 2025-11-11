@@ -20,12 +20,12 @@ const projects = [
     link: "/projects/2",
     title: "Pesa",
   },
-  {
-    id: 3,
-    img: "/images/project3.jpg",
-    link: "/projects/3",
-    title: "Mobile Design",
-  },
+  // {
+  //   id: 3,
+  //   img: "/images/project3.jpg",
+  //   link: "/projects/3",
+  //   title: "Mobile Design",
+  // },
 ];
 
 export default function ProjectsSection() {
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
 
   return (
     <section
-      id="projects"
+      id="projets"
       ref={ref}
       className="min-h-screen flex flex-col items-center justify-center bg-gray-950 text-white px-4 py-20 overflow-hidden"
     >
@@ -46,10 +46,10 @@ export default function ProjectsSection() {
         transition={{ duration: 0.8 }}
         className="text-4xl md:text-5xl font-bold text-center max-w-4xl "
       >
-        <h2 className="text-4xl lg:text-6xl font-bold text-foreground text-balance">
+        <p className="text-4xl lg:text-6xl font-bold text-foreground text-balance">
           Nous mettons des solutions{" "}
           <span className="text-primary">sur mesure à votre disposition</span>
-        </h2>
+        </p>
 
         <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-3">
           Un accompagnement sur mesure pour transformer vos concepts en
@@ -151,22 +151,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
-// export default function Products() {
-//   return (
-//     <section className="py-32 px-6 bg-white">
-{
-  /* <div className="text-center px-32 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 ">
-          Nous mettons des solutions sur mesure à votre disposition
-        </h2>
-        <p className="text-gray-600 mt-6">
-          Un accompagnement sur mesure pour transformer vos concepts en
-          solutions numériques innovantes.
-        </p>
-        </div> */
-}
-
-//     </section>
-//   );
-// }

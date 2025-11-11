@@ -18,6 +18,11 @@ export function ParallaxHero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    const whatsappLink = `https://wa.me/243850674579?text=${encodeURIComponent(
+    "Bonjour, je souhaite en savoir plus sur votre équipe et vos services."
+  )}`;
+
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-background">
       {/* Background Elements */}
@@ -81,6 +86,7 @@ export function ParallaxHero() {
                 À propos de notre agence
               </Button>
               <Button
+               onClick={() => window.open(whatsappLink, "_blank")}
                 size="lg"
                 variant="secondary"
                 className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-6 text-lg rounded-full"
