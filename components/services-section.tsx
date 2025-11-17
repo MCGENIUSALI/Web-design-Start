@@ -22,7 +22,7 @@ export default function ServicesSection() {
         "Nos solutions d'IA et d'automatisation transforment radicalement votre façon de travailler. Nous développons des systèmes intelligents capables d'analyser vos données, de prédire les tendances et d'automatiser les processus complexes. De l'automatisation de vos workflows à l'implémentation de chatbots intelligents, en passant par l'analyse prédictive et le machine learning, nous créons des solutions qui s'adaptent à vos besoins spécifiques. Notre approche garantit une intégration fluide avec vos systèmes existants tout en maximisant votre retour sur investissement.",
       icon: Brain,
       isDark: true,
-      bannerImage: "/ai-artificial-intelligence-neural-network-automati.jpg", // Updated to use generated image
+      bannerImage: " /images/image services/ia.png",
     },
     {
       title: "Applications Web & Mobiles",
@@ -32,7 +32,7 @@ export default function ServicesSection() {
         "De l'idée au lancement, nous accompagnons votre projet d'application web et mobile avec expertise. Nos développeurs maîtrisent les technologies les plus récentes (React, Next.js, React Native, Flutter) pour créer des applications rapides, sécurisées et évolutives. Nous accordons une attention particulière à l'architecture logicielle, à la performance et à la sécurité des données. Chaque application est testée rigoureusement et optimisée pour offrir une expérience utilisateur exceptionnelle sur tous les appareils et plateformes.",
       icon: Smartphone,
       isDark: false,
-      bannerImage: "/modern-web-mobile-app-development-responsive-desig.jpg", // Updated to use generated image
+      bannerImage: "/images/image services/app.png",
     },
     {
       title: "Design UX/UI centré utilisateur",
@@ -42,7 +42,7 @@ export default function ServicesSection() {
         "Notre approche du design UX/UI combine recherche utilisateur, prototypage et tests itératifs pour créer des interfaces qui ravissent vos utilisateurs. Nous analysons le comportement de vos cibles, créons des parcours utilisateurs optimisés et concevons des interfaces visuellement attrayantes. Chaque élément est pensé pour maximiser l'engagement, faciliter la navigation et renforcer votre identité de marque. Nous utilisons les outils les plus performants (Figma, Adobe XD) et suivons les meilleures pratiques en matière d'accessibilité et de design system.",
       icon: Palette,
       isDark: false,
-      bannerImage: "/ux-ui-design-user-interface-wireframe-colorful-mod.jpg", // Updated to use generated image
+      bannerImage:"/images/image services/ux.png",
     },
     {
       title: "Communication 360°",
@@ -52,7 +52,7 @@ export default function ServicesSection() {
         "Notre service de communication 360° englobe l'ensemble de vos besoins en matière de visibilité et de notoriété. De l'élaboration de votre stratégie de contenu à la création de visuels percutants, en passant par la gestion de vos réseaux sociaux et vos campagnes publicitaires, nous assurons une présence cohérente et impactante sur tous les canaux. Nous analysons votre marché, identifions vos cibles et créons des messages qui résonnent avec votre audience. Notre objectif : faire rayonner votre marque et générer un engagement durable avec vos clients.",
       icon: Megaphone,
       isDark: false,
-      bannerImage: "/marketing-communication-megaphone-social-media-str.jpg", // Updated to use generated image
+      bannerImage: "/images/image services/com.png",
     },
     
   ];
@@ -197,7 +197,7 @@ export default function ServicesSection() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 border-gray-300 hover:bg-gray-50 text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-200"
+                  className="flex-1 border-gray-300 hover:bg-gray-200 hover:text-gray-900 bg-accent-foreground text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-200"
                   onClick={closeModal}
                 >
                   Fermer
